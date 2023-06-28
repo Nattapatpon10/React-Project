@@ -10,15 +10,15 @@ import { RegisterPage } from './page/RegisterPage.tsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/React-Project/",
     element: <App />,
   },
   {
-    path: "/register",
+    path: "/React-Project/register",
     element: <RegisterPage />,
   },
   {
-    path: "/admin",
+    path: "/React-Project/admin",
     element: <LayoutAdmin />,
     children: [
       {
