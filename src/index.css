@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-log{
+    @apply w-2/3 float-right outline-none rounded-[0.3rem] border-2
+    hover:border-[#DDE6ED] focus:border-[#DDE6ED] text-[#27374D] hover:bg-[#27374D] focus:text-[#DDE6ED] focus:bg-[#27374D] hover:text-[#DDE6ED]
+     
+  }
+  .btn{
+    @apply border border-[#27374D] bg-[#DDE6ED] rounded-[0.2rem] shadow-md text-[#27374D] 
+    px-2 hover:bg-[#27374D]  hover:border-[#DDE6ED] hover:text-[#DDE6ED] flex flex-row items-center gap-1
+  }
+
+}
+
+html,
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #DDE6ED;
+}
