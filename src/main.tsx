@@ -6,19 +6,23 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { LayoutAdmin } from './component/LayoutAdmin.tsx'
 import { UserList } from './component/UserList.tsx'
 import { RegisterPage } from './page/RegisterPage.tsx'
+import { Layout } from './component/Layout.tsx'
+import { LayoutStudent } from './component/LayoutStudent.tsx'
+import { LeavePage } from './page/LeavePage.tsx'
+import { StatisticsPage } from './page/StatisticsPage.tsx'
 
 
 const router = createBrowserRouter([
   {
-    path: "/React-Project/",
+    path: "/",
     element: <App />,
   },
   {
-    path: "/React-Project/register",
+    path: "/register",
     element: <RegisterPage />,
   },
   {
-    path: "/React-Project/admin",
+    path: "/admin",
     element: <LayoutAdmin />,
     children: [
       {
@@ -28,6 +32,37 @@ const router = createBrowserRouter([
       
     ]
   },
+  {
+    path:"/student",
+    element: <LayoutStudent />,
+    children: [
+      {
+        path: "leavePage",
+        element:<LeavePage />,
+      },
+      {
+        path: "accountStudent",
+        element:""
+      },
+     
+      
+    ]
+  },
+  {
+    path:"/teacher",
+    element:<Layout />,
+    children: [
+      {
+        path: "statistics",
+        element:<StatisticsPage />
+      },
+      {
+        path: "accountTeacher",
+        element:""
+      }
+      
+    ]
+  }
 
 ]);
 

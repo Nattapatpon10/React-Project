@@ -1,5 +1,4 @@
 {
-  "homepage": "http://nattapatpon10.github.io/Final-React",
   "name": "studentleave",
   "private": true,
   "version": "0.0.0",
@@ -8,19 +7,21 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.0",
-    "tabletop": "^1.6.2"
+    "sweetalert2": "^11.4.8",
+    "tabletop": "^1.6.2",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

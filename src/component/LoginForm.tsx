@@ -23,7 +23,7 @@ const LoginForm:FC = () => {
                     <input type="password" id="password" placeholder="PASSWORD" className="input-log" />
                 </div>
                 <div className="flex flex-row justify-center gap-3 ">
-                    <button className="btn"> <FontAwesomeIcon icon={faRightToBracket} /> Login</button>
+                <Link to="/admin/userlist" className="btn"> <FontAwesomeIcon icon={faRightToBracket} /> Login</Link>
                    <Link to="/register" className="btn"> <FontAwesomeIcon icon={faUserPlus} /> Register </Link>
                 </div>
 

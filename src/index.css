@@ -14,7 +14,9 @@
     @apply border border-[#27374D] bg-[#DDE6ED] rounded-[0.2rem] shadow-md text-[#27374D] 
     px-2 hover:bg-[#27374D]  hover:border-[#DDE6ED] hover:text-[#DDE6ED] flex flex-row items-center gap-1
   }
-
+  .input-LeavePage{
+    @apply outline-none rounded-[0.3rem] text-[#27374D] float-right  focus:shadow-md hover:shadow-md
+  }
 }
 
 html,
